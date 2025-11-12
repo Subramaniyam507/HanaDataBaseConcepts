@@ -1,13 +1,15 @@
-namespace app.interactions;
 
 using {
   
-    Currency,
+
     cuid,
     managed
 } from '@sap/cds/common';
 
-type BusinessKey : String(10);
+context  app.interactions{
+
+
+    type BusinessKey : String(10);
 type Price       : Decimal(10, 2);
 type Text        : String(1024);
 
@@ -26,3 +28,16 @@ entity Items : cuid {
     price       : Price;
 
 };
+}
+
+@cds.persistence.exists
+@cds.persistence.calcview
+entity V_INTERATION {
+  key ID         : String(36);
+  PARTNER        : String(10);
+  CREATEDAT      : Timestamp;
+  CREATEDBY      : String(255);
+  TEXT           : String(1024);
+  DATE           : DateTime;
+  PRICE          : Decimal(10,2);
+}

@@ -4,3 +4,5 @@
 
 # auto generated wildcard
 db/.env
+# nodemodules
+node_modules/
