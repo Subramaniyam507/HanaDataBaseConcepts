@@ -6,3 +6,4 @@
 db/.env
 # nodemodules
 node_modules/
+@cds-models
