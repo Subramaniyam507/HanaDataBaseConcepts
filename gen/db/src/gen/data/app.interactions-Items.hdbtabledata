@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "APP_INTERACTIONS_ITEMS",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "app.interactions-Items.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "ID",
+          "INTERACTION_ID",
+          "TEXT",
+          "DATE",
+          "PRICE"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "ID": "ID",
+        "INTERACTION_ID": "interaction_ID",
+        "TEXT": "text",
+        "DATE": "date",
+        "PRICE": "price"
+      }
+    }
+  ]
+}

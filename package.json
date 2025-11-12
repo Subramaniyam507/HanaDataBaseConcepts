@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9.4.4",
+    "@sap/cds-common-content": "^3.0.1"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^9"
+  },
+  "cds": {}
+}

@@ -1,0 +1,8 @@
+VIEW CatalogService_Interactions_Header AS SELECT
+  Headers_0.ID,
+  Headers_0.createdAt,
+  Headers_0.createdBy,
+  Headers_0.modifiedAt,
+  Headers_0.modifiedBy,
+  Headers_0.partner
+FROM app_interactions_Headers AS Headers_0
